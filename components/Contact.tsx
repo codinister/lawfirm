@@ -50,7 +50,7 @@ const Contact = () => {
         </div>
       </div>
       <div>
-        <Map src={city} width="100%" height="350pz" />
+        <Map src={street} width="100%" height="350pz" />
       </div>
     </div>
   );
