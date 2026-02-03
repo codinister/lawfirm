@@ -1,8 +1,14 @@
 'use client'
 
+import DesktopNav from "./DesktopNav"
+import MobileNav from "./MobileNav"
+
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <>
+    <DesktopNav />
+    <MobileNav />
+    </>
   )
 }
 
