@@ -19,10 +19,10 @@ const Practice = () => {
         {data.map((v, k) => (
           <div
             key={k}
-            className="w-[45%] rounded-2xl bg-white shadow-lg text-center p-6"
+            className="w-[45%] rounded-2xl bg-white shadow-lg text-left p-6"
           >
-            <div className="bg-primary text-white not-even:w-10 h-10 rounded-full flex justify-center text-shadow-lg items-center mx-auto mb-6">
-              {k + 1}
+            <div className="bg-primary text-white not-even:w-10 h-10 rounded-full flex justify-center text-shadow-lg items-center  mb-6 ">
+              <h6>{k + 1}</h6>
             </div>
 
             <h5 className="mb-6">{v.title}</h5>

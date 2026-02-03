@@ -1,14 +1,17 @@
 export default [
   {
-    title: 40,
-    desc: 'Years of experience',
+    total: 100,
+    title: 'Matter',
+    subtitle: 'Experience',
   },
   {
-    title: 1000,
-    desc: 'Legal cases',
+    total: 10,
+    title: 'Record Capability',
+    subtitle: 'Per Case',
   },
   {
-    title: 20,
-    desc: 'Professional lawyers',
+    total: 30,
+    title: 'Years Experience',
+    subtitle: 'Senior Team',
   },
 ];

@@ -16,7 +16,18 @@ const Services = () => {
         backgroundPosition: 'top',
       }}
     >
+
+
+
+       <div className="w-150 mx-auto mb-10 text-center text-white">
+          <h6>One Trusted Team. Consistent Expertise. Every Time.</h6>
+          <h6>The Same Dedicated Team. Proven Results. Every Engagement.</h6>
+        </div>
+
+
       <div className="container mx-auto flex gap-10">
+ 
+
         {servicesData.map((v, k) => (
           <div
             key={k}
@@ -42,10 +53,19 @@ const Services = () => {
             </div>
 
             <h5 className="my-6">
-              <CountUp end={v.title} duration={4} delay={2} />
+
+              {
+                v.total === 100 && (<span className="text-10">$</span>)
+              }
+              <CountUp end={v.total} duration={2} delay={1} />
+                  {
+                v.total === 100 ? (<span className="text-10"> M+</span>) : v.total === 10 ? (<span className="text-10"> M+</span>) : (<span className="text-10">+</span>)
+              }
+              
             </h5>
 
-            <p>{v.desc}</p>
+            <p>{v.title}</p>
+            <p className="text-white/70">{v.subtitle}</p>
           </div>
         ))}
       </div>
