@@ -11,15 +11,15 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="container mx-auto flex flex-col md:flex-row gap-10 py-20 px-6">
-        <div className="flex-1 p-6 md:p-0">
+      <div className="container mx-auto flex flex-col sm:flex-row md:flex-row gap-10 py-20 px-6">
+        <div className="flex-1 p-6 md:p-0 sm:p-0">
           <h5 className="mb-4">REACHOUT FOR SUPPORT</h5>
 
           <div className="flex mt=10 mb-6 border-2 border-accent-foreground p-4 gap-4">
             <div>
               <MdOutlineMail className="text-5xl text-primary" />
             </div>
-            <div className='hidden md:block'>
+            <div className='hidden md:block sm:block'>
               <p>Send Us A Message</p>
               <h6>{email}</h6>
             </div>

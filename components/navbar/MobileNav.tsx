@@ -22,7 +22,7 @@ const MobileNav = () => {
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
           <Title></Title>
-          <div className="container flex items-center gap-55">
+          <div className="container flex items-center gap-48">
             <CiMenuFries className="cursor-pointer text-3xl" />
             <Link href="/contact" className=" w-max py-2 px-6 rounded-full bg-primary text-white text-center border-2 border-primary flex items-center justify-center hover:text-primary hover:bg-white">
               Connect

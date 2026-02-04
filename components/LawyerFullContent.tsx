@@ -13,7 +13,7 @@ const LawyerFullContent = () => {
     <>
       <section className="container py-10 mx-auto flex-col md:flex-row sm:flex-row flex">
         <div
-          className="flex-1 py-80"
+          className="flex-1 py-80 md:h-150 sm:h-170 "
           style={{
             backgroundImage: `url(${lawyer})`,
             backgroundSize: 'cover',
