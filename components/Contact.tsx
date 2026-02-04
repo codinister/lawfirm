@@ -21,7 +21,7 @@ const Contact = () => {
             </div>
             <div>
               <p>Send Us A Message</p>
-              <h6>{email}</h6>
+              <h6 className='break-words max-w-[250px]'>{email}</h6>
             </div>
           </div>
 
