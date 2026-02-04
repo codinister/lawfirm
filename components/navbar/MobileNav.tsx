@@ -9,21 +9,24 @@ import Image from 'next/image';
 import Link from 'next/link';
 import footerData from '@/state/footer/footerData';
 import { PiPhoneOutgoingLight } from 'react-icons/pi';
+import { useState } from 'react';
 
 const MobileNav = () => {
   const { logo } = imagesData;
   const { city, street, address, phone, note, email } = footerData;
+  const [open, setOpen] = useState(false)
+
 
   return (
     <nav className="md:hidden block bg-white w-full p-4 fixed top-0 left-0 z-19">
-      <Sheet>
+      <Sheet  open={open} onOpenChange={setOpen}>
         <SheetTrigger>
           <Title></Title>
           <CiMenuFries className="cursor-pointer text-3xl" />
         </SheetTrigger>
 
         <SheetContent className="p-6 w-[85%]">
-          <a href="/">
+          <Link href="/" onClick={() => setOpen(false)}>
           <Image
             src={logo}
             alt="logo"
@@ -31,11 +34,11 @@ const MobileNav = () => {
             width="100"
             height="100"
           />
-          </a>
+          </Link>
           <ul>
             {navData.map((v, k) => (
               <li key={k} className="mb-7">
-                <a href={v.path}>{v.name}</a>
+                <Link  onClick={() => setOpen(false)} href={v.path}>{v.name}</Link>
               </li>
             ))}
           </ul>
