@@ -7,16 +7,16 @@ import ContactForm from './ContactForm';
 import footerData from '@/state/footer/footerData';
 
 const Contact = () => {
-  const { city, email, street, address, phone } = footerData;
+  const { city, email, street, address } = footerData;
 
   return (
     <div>
-      <div className="container mx-auto flex flex-col sm:flex-row md:flex-row gap-10 py-20 px-6">
+      <div className="container mx-auto flex flex-col md:flex-row gap-10 py-20 px-6">
         <div className="flex-1 p-6 md:p-0 sm:p-0">
           <h5 className="mb-4">REACHOUT FOR SUPPORT</h5>
 
           <div className="flex mt=10 mb-6 border-2 border-accent-foreground p-4 gap-4">
-            <div>
+            <div className='hidden md:block sm:block'>
               <MdOutlineMail className="text-5xl text-primary" />
             </div>
             <div className='hidden md:block sm:block'>
@@ -28,10 +28,6 @@ const Contact = () => {
           <div className="flex border-2 border-accent-foreground p-4 gap-4 mb-6">
             <div>
               <FaPhoneAlt className="text-5xl text-primary" />
-            </div>
-            <div>
-              <p>Give Us A Call</p>
-              <h6>{phone}</h6>
             </div>
           </div>
 

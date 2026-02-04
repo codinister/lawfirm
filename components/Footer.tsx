@@ -8,7 +8,7 @@ import { PiPhoneOutgoingLight } from 'react-icons/pi';
 
 const Footer = () => {
   const { logo } = imagesData;
-  const { services, city, street, address, phone, note, copyright } =
+  const { services, city, street, address, note, copyright } =
     footerData;
   return (
     <footer className="py-10 bg-secondary px-6 md:px-0">
@@ -44,7 +44,6 @@ const Footer = () => {
                 <PiPhoneOutgoingLight className="text-5xl text-primary" />
               </div>
               <div>
-                <div>{phone}</div>
                 <div>{note}</div>
               </div>
             </li>

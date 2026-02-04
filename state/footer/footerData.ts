@@ -8,9 +8,8 @@ export default {
   city: 'Georgia Office',
   street: '1711 Price Street',
   address: 'Savannah, GA 31401',
-  phone: '(912) 544-2050',
   note: 'Talk with an attorney',
-  email: 'info@mwrcorporatelawfirm.com',
+  email: ' michaelwrollinson@gmail.com',
   copyright:
     '&copy; 2026 MWR Corporate Law Firm. All rights Reserved. Attorney Advertisement.',
 };

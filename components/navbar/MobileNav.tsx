@@ -14,7 +14,7 @@ import { Button } from '../ui/button';
 
 const MobileNav = () => {
   const { logo } = imagesData;
-  const { city, street, address, phone, note, email } = footerData;
+  const { city, street, address,  note, email } = footerData;
   const [open, setOpen] = useState(false);
 
   return (
@@ -68,7 +68,6 @@ const MobileNav = () => {
                   <PiPhoneOutgoingLight className="text-5xl text-primary" />
                 </div>
                 <div>
-                  <div>{phone}</div>
                   <div>{note}</div>
                 </div>
               </li>
