@@ -16,18 +16,12 @@ const Contact = () => {
           <h5 className="mb-4">REACHOUT FOR SUPPORT</h5>
 
           <div className="flex mt=10 mb-6 border-2 border-accent-foreground p-4 gap-4">
-            <div className='hidden md:block sm:block'>
+            <div>
               <MdOutlineMail className="text-5xl text-primary" />
             </div>
-            <div className='hidden md:block sm:block'>
+            <div>
               <p>Send Us A Message</p>
               <h6>{email}</h6>
-            </div>
-          </div>
-
-          <div className="flex border-2 border-accent-foreground p-4 gap-4 mb-6">
-            <div>
-              <FaPhoneAlt className="text-5xl text-primary" />
             </div>
           </div>
 
