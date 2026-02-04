@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <section
-      className="h-screen relative before:content-[''] before:block before:absolute before:inset-0 before:bg-linear-to-t before:from-black before:-z-1 z-2"
+      className="h-150 p-6 md:h-screen relative before:content-[''] before:block before:absolute before:inset-0 before:bg-linear-to-t before:from-black before:-z-1 z-2"
       style={{
         backgroundImage: `url(${hero})`,
         backgroundSize: 'cover',

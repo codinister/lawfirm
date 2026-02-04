@@ -23,6 +23,7 @@ const MobileNav = () => {
         </SheetTrigger>
 
         <SheetContent className="p-6 w-[85%]">
+          <Link href="/">
           <Image
             src={logo}
             alt="logo"
@@ -30,6 +31,7 @@ const MobileNav = () => {
             width="100"
             height="100"
           />
+          </Link>
           <ul>
             {navData.map((v, k) => (
               <li key={k} className="mb-7">

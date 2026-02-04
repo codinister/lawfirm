@@ -9,25 +9,19 @@ const Services = () => {
 
   return (
     <section
-      className="py-10"
+      className="py-10  md:px-0"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'top',
       }}
     >
+      <div className=" md:w-150 mx-auto mb-10 text-left md:text-center text-white p-6">
+        <h6>One Trusted Team. Consistent Expertise. Every Time.</h6>
+        <h6>The Same Dedicated Team. Proven Results. Every Engagement.</h6>
+      </div>
 
-
-
-       <div className="w-150 mx-auto mb-10 text-center text-white">
-          <h6>One Trusted Team. Consistent Expertise. Every Time.</h6>
-          <h6>The Same Dedicated Team. Proven Results. Every Engagement.</h6>
-        </div>
-
-
-      <div className="container mx-auto flex gap-10">
- 
-
+      <div className="px-6 md:px-0 container mx-auto flex flex-col md:flex-row gap-10">
         {servicesData.map((v, k) => (
           <div
             key={k}
@@ -53,15 +47,15 @@ const Services = () => {
             </div>
 
             <h5 className="my-6">
-
-              {
-                v.total === 100 && (<span className="text-10">$</span>)
-              }
+              {v.total === 100 && <span className="text-10">$</span>}
               <CountUp end={v.total} duration={2} delay={1} />
-                  {
-                v.total === 100 ? (<span className="text-10"> M+</span>) : v.total === 10 ? (<span className="text-10"> M+</span>) : (<span className="text-10">+</span>)
-              }
-              
+              {v.total === 100 ? (
+                <span className="text-10"> M+</span>
+              ) : v.total === 10 ? (
+                <span className="text-10"> M+</span>
+              ) : (
+                <span className="text-10">+</span>
+              )}
             </h5>
 
             <p>{v.title}</p>

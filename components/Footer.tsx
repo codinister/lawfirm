@@ -11,8 +11,8 @@ const Footer = () => {
   const { services, city, street, address, phone, note, copyright } =
     footerData;
   return (
-    <footer className="py-10 bg-secondary ">
-      <div className="container mx-auto flex gap-10">
+    <footer className="py-10 bg-secondary px-6 md:px-0">
+      <div className="container mx-auto flex flex-col md:flex-row gap-10">
         <div className="flex-1">
           <Image src={logo} width="200" height="200" alt="" />
         </div>

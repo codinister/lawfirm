@@ -15,11 +15,11 @@ const Practice = () => {
       </div>
 
 
-      <div className="container mx-auto flex justify-center flex-wrap gap-10">
+      <div className="container mx-auto flex flex-col md:flex-row justify-center flex-wrap gap-10 p-6">
         {data.map((v, k) => (
           <div
             key={k}
-            className="w-[45%] rounded-2xl bg-white shadow-lg text-left p-6"
+            className="w-full md:w-[45%] rounded-2xl bg-white shadow-lg text-left p-6"
           >
             <div className="bg-primary text-white not-even:w-10 h-10 rounded-full flex justify-center text-shadow-lg items-center  mb-6 ">
               <h6>{k + 1}</h6>

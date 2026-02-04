@@ -11,9 +11,9 @@ const LawyerFullContent = () => {
 
   return (
     <>
-      <section className="container py-10 mx-auto flex">
+      <section className="container py-10 mx-auto flex-col md:flex-row flex">
         <div
-          className="flex-1"
+          className="flex-1 py-80"
           style={{
             backgroundImage: `url(${lawyer})`,
             backgroundSize: 'cover',
@@ -28,7 +28,7 @@ const LawyerFullContent = () => {
         </div>
       </section>
 
-      <div className="container mx-auto flex gap-10 pb-10">
+      <div className="container  mx-auto flex flex-col md:flex-row gap-10 md:pb-10 p-6">
         <div className="flex-1 rounded-2xl shadow-2xl p-6">{para1}</div>
         <div className="flex-1 rounded-2xl shadow-2xl p-6">{para3}</div>
       </div>
