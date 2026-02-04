@@ -14,8 +14,8 @@ const Hero = () => {
         backgroundPosition: 'center',
       }}
     >
-      <div className="container mx-auto flex justify-start items-center h-screen">
-        <h3 className="shadow-lg w-150 text-white font-extrabold">
+      <div className="container mx-auto flex justify-start items-center h-screen sm:justify-center md:justify-start">
+        <h3 className="text-8xlshadow-lg md:w-150 text-white font-extrabold">
           Specialized <span className="text-primary">Legal</span> Services for
           All Things corporate.
         </h3>

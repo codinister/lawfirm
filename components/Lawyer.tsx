@@ -9,9 +9,9 @@ const Lawyer = () => {
   const { title, para1, para2 } = lawyerData;
 
   return (
-    <section className=" flex md:flex-row flex-col">
+    <section className=" flex md:flex-row sm:flex-row flex-col">
       <div
-        className="flex-1 md:h-150 md:py-0 py-80"
+        className="flex-1 md:h-150 sm:h-170 md:py-0 py-80"
         style={{
           backgroundImage: `url(${lawyer})`,
           backgroundSize: 'cover',

@@ -10,35 +10,42 @@ import Link from 'next/link';
 import footerData from '@/state/footer/footerData';
 import { PiPhoneOutgoingLight } from 'react-icons/pi';
 import { useState } from 'react';
+import { Button } from '../ui/button';
 
 const MobileNav = () => {
   const { logo } = imagesData;
   const { city, street, address, phone, note, email } = footerData;
-  const [open, setOpen] = useState(false)
-
+  const [open, setOpen] = useState(false);
 
   return (
-    <nav className="md:hidden block bg-white w-full p-4 fixed top-0 left-0 z-19">
-      <Sheet  open={open} onOpenChange={setOpen}>
+    <nav className="md:hidden sm:hidden block bg-white w-full p-4 fixed top-0 left-0 z-19 shadow-lg">
+      <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
           <Title></Title>
-          <CiMenuFries className="cursor-pointer text-3xl" />
+          <div className="container flex items-center gap-55">
+            <CiMenuFries className="cursor-pointer text-3xl" />
+            <Link href="/contact" className=" w-max py-2 px-6 rounded-full bg-primary text-white text-center border-2 border-primary flex items-center justify-center hover:text-primary hover:bg-white">
+              Connect
+            </Link>
+          </div>
         </SheetTrigger>
 
         <SheetContent side="left" className="p-6 w-[85%]">
           <Link href="/" onClick={() => setOpen(false)}>
-          <Image
-            src={logo}
-            alt="logo"
-            className="mb-10"
-            width="100"
-            height="100"
-          />
+            <Image
+              src={logo}
+              alt="logo"
+              className="mb-10"
+              width="100"
+              height="100"
+            />
           </Link>
           <ul>
             {navData.map((v, k) => (
               <li key={k} className="mb-7">
-                <Link  onClick={() => setOpen(false)} href={v.path}>{v.name}</Link>
+                <Link onClick={() => setOpen(false)} href={v.path}>
+                  {v.name}
+                </Link>
               </li>
             ))}
           </ul>

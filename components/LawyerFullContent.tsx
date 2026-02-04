@@ -11,7 +11,7 @@ const LawyerFullContent = () => {
 
   return (
     <>
-      <section className="container py-10 mx-auto flex-col md:flex-row flex">
+      <section className="container py-10 mx-auto flex-col md:flex-row sm:flex-row flex">
         <div
           className="flex-1 py-80"
           style={{
@@ -28,7 +28,7 @@ const LawyerFullContent = () => {
         </div>
       </section>
 
-      <div className="container  mx-auto flex flex-col md:flex-row gap-10 md:pb-10 p-6">
+      <div className="container  mx-auto flex flex-col sm:flex-row md:flex-row gap-10 md:pb-10 p-6">
         <div className="flex-1 rounded-2xl shadow-2xl p-6">{para1}</div>
         <div className="flex-1 rounded-2xl shadow-2xl p-6">{para3}</div>
       </div>

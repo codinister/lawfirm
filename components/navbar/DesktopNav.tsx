@@ -20,7 +20,7 @@ const DesktopNav = () => {
 
   return (
     <motion.nav
-      className={` ${getScrollAmnt > 0.08 ? 'bg-white transition-all duration-1000 text-black shadow-lg' : 'text-white'}  hidden md:block py-3 fixed top-0 left-0 w-full z-20`}
+      className={` ${getScrollAmnt > 0.08 ? 'bg-white transition-all duration-1000 text-black shadow-lg' : 'text-white'}  hidden sm:block md:block py-3 fixed top-0 left-0 w-full z-20`}
     >
       <div className="container mx-auto flex">
         <div className="flex-1">

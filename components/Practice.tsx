@@ -9,13 +9,14 @@ const Practice = () => {
     <section className="py-20 bg-secondary">
 
       <div className="container mx-auto mb-20">
-      <h4 className='text-center'>
+      <h2 className='text-center font-bold'>
         Our <span className="text-primary">Practice</span> Areas
-      </h4>
+      </h2>
+      <div className="w-25 border-b-2 border-black/70 mx-auto mt-6"></div>
       </div>
 
 
-      <div className="container mx-auto flex flex-col md:flex-row justify-center flex-wrap gap-10 p-6">
+      <div className="container mx-auto flex flex-col sm:flex-row  md:flex-row justify-center flex-wrap gap-10 p-6">
         {data.map((v, k) => (
           <div
             key={k}

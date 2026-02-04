@@ -3,7 +3,7 @@
 const PracticeCaption = () => {
   return (
     <div className="container mx-auto py-20 flex justify-center items-center px-6">
-      <div className="text-left md:text-center md:w-150">
+      <div className="text-left sm:text-center sm:w-110   md:text-center md:w-150">
         <p className="text-black/70">OUR PRACTICE</p>
         <h4>The Capabilities You Need.</h4>
         <h4 className="italics">The Experience That Matters.</h4>
