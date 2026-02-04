@@ -47,7 +47,7 @@ const Footer = () => {
               </div>
               <div>
                 <p>Send Us A Message</p>
-                <h6 className="sm:max-w-[270px] max-w-[100px]">{email}</h6>
+                <h6 className="bread-words sm:max-w-[270px] max-w-[150px]">{email}</h6>
               </div>
             </li>
           </ul>
