@@ -16,7 +16,7 @@ const Practice = () => {
       </div>
 
 
-      <div className="container mx-auto flex flex-col  md:flex-row sm:flex-row justify-center  gap-10 p-6">
+      <div className="container mx-auto flex flex-col  md:flex-row sm:flex-row justify-center flex-wrap  gap-10 p-6">
         {data.map((v, k) => (
           <div
             key={k}
