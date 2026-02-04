@@ -9,7 +9,7 @@ import { MdOutlineMail } from 'react-icons/md';
 
 const Footer = () => {
   const { logo } = imagesData;
-  const { services, city,email, street, address, note, copyright } =
+  const { services, city, email, street, address, note, copyright } =
     footerData;
   return (
     <footer className="py-10 bg-secondary px-6 md:px-0">
@@ -41,15 +41,15 @@ const Footer = () => {
               </div>
             </li>
 
-           <li className="flex gap-6 mb-6">
-                    <div>
-                          <MdOutlineMail className="text-5xl text-primary" />
-                        </div>
-                        <div>
-                          <p>Send Us A Message</p>
-                          <h6 className='sm:max-w-[350px] max-w-[250px]'>{email}</h6>
-                        </div>
-</li>
+            <li className="flex gap-6 mb-6">
+              <div>
+                <MdOutlineMail className="text-5xl text-primary" />
+              </div>
+              <div>
+                <p>Send Us A Message</p>
+                <h6 className="sm:max-w-[270px] max-w-[190px]">{email}</h6>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
