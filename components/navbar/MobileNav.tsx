@@ -63,14 +63,7 @@ const MobileNav = () => {
                   <div>{address}</div>
                 </div>
               </li>
-              <li className="flex gap-6">
-                <div>
-                  <PiPhoneOutgoingLight className="text-5xl text-primary" />
-                </div>
-                <div>
-                  <div>{note}</div>
-                </div>
-              </li>
+        
             </ul>
           </div>
         </SheetContent>
