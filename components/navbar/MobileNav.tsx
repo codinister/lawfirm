@@ -25,7 +25,7 @@ const MobileNav = () => {
           <CiMenuFries className="cursor-pointer text-3xl" />
         </SheetTrigger>
 
-        <SheetContent className="p-6 w-[85%]">
+        <SheetContent side="left" className="p-6 w-[85%]">
           <Link href="/" onClick={() => setOpen(false)}>
           <Image
             src={logo}
