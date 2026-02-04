@@ -23,24 +23,24 @@ const MobileNav = () => {
         </SheetTrigger>
 
         <SheetContent className="p-6 w-[85%]">
-          <Link href="/">
+          <a href="/">
           <Image
             src={logo}
             alt="logo"
-            className="mb-20"
+            className="mb-10"
             width="100"
             height="100"
           />
-          </Link>
+          </a>
           <ul>
             {navData.map((v, k) => (
               <li key={k} className="mb-7">
-                <Link href={v.path}>{v.name}</Link>
+                <a href={v.path}>{v.name}</a>
               </li>
             ))}
           </ul>
 
-          <div className="mt-20">
+          <div className="mt-6">
             <h5 className="mb-6 text-primary">Contact</h5>
             <ul>
               <li className="flex gap-6 mb-6">

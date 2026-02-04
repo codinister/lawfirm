@@ -21,7 +21,7 @@ const Services = () => {
         <h6>The Same Dedicated Team. Proven Results. Every Engagement.</h6>
       </div>
 
-      <div className="px-6 md:px-0 container mx-auto flex flex-col md:flex-row gap-10">
+      <div className="px-6 md:px-0 container mx-auto flex flex-col md:flex-row sm:flex-row gap-10">
         {servicesData.map((v, k) => (
           <div
             key={k}
