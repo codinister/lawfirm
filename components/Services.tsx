@@ -48,7 +48,7 @@ const Services = () => {
 
             <h5 className="my-6">
               {v.total === 100 && <span className="text-10">$</span>}
-              <CountUp end={v.total} duration={2} delay={1} />
+              <CountUp end={v.total} duration={2} delay={4} />
               {v.total === 100 ? (
                 <span className="text-10"> M+</span>
               ) : v.total === 10 ? (
